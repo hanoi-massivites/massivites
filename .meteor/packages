@@ -22,4 +22,12 @@ useraccounts:semantic-ui
 natestrauser:animate-css
 dburles:collection-helpers
 meteorhacks:fast-render
+linto:fontawesome
+aldeed:autoform
+mrt:moment
+accounts-ui
+yogiben:autoform-modals
+mrt:selectize
+nemo64:bootstrap
+useraccounts:bootstrap
 

@@ -1,5 +1,8 @@
 accounts-base@1.1.2
 accounts-password@1.0.4
+accounts-ui-unstyled@1.1.4
+accounts-ui@1.1.3
+aldeed:autoform@3.2.0
 aldeed:collection2@2.2.0
 aldeed:simple-schema@1.0.3
 application-configuration@1.0.3
@@ -44,6 +47,7 @@ jquery@1.0.1
 json@1.0.1
 launch-screen@1.0.0
 less@1.0.11
+linto:fontawesome@4.2.2
 livedata@1.0.11
 localstorage@1.0.1
 logging@1.0.5
@@ -57,7 +61,11 @@ minimongo@1.0.5
 mobile-status-bar@1.0.1
 mongo-livedata@1.0.6
 mongo@1.0.8
+mrt:moment@2.6.0
+mrt:selectize@0.0.1
 natestrauser:animate-css@3.1.2
+nemo64:bootstrap-data@3.3.0_1
+nemo64:bootstrap@3.3.0_1
 nooitaf:semantic-ui-less@0.19.3
 npm-bcrypt@0.7.7
 observe-sequence@1.0.3
@@ -82,9 +90,11 @@ tracker@1.0.3
 ui@1.0.4
 underscore@1.0.1
 url@1.0.2
+useraccounts:bootstrap@1.1.1
 useraccounts:core@1.1.1
 useraccounts:semantic-ui@1.1.1
 webapp-hashing@1.0.1
 webapp@1.1.4
 wizonesolutions:underscore-string@1.0.0
+yogiben:autoform-modals@0.2.2
 zimme:iron-router-active@1.0.0
