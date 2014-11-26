@@ -1,3 +1,8 @@
 <template name="basicLayout">
+  <div class="container">
+    {{> header}}
+  </div>
+  <div class="row-fluid" id="main">
     {{> yield}}
+  </div>
 </template>

@@ -7,3 +7,9 @@ meteor-platform
 autopublish
 insecure
 nemo64:bootstrap
+iron:router
+coffeescript
+less
+jquery
+linto:fontawesome
+
