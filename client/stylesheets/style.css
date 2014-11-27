@@ -1,7 +1,27 @@
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
 body {
     padding-top: 60px;
     padding-bottom: 30px;
 }
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+/* --------------------------------------
+   postItem
+   -------------------------------------- */
 
 .post {
     position: relative;
@@ -30,7 +50,7 @@ body {
 }
 .post > .post-tags {
     position: absolute;
-    top: 35px;
+    top: 84px;
     right: -3px;
 }
 .post > .post-tags > ul {
@@ -84,7 +104,8 @@ body {
     padding-bottom: 0px;
 }
 .post > .panel-heading > img {
-    margin-right: 15px;
+    margin-top: 25px;
+    width: 30px;
 }
 .post > .panel-heading > h3 {
     margin: 0px;
@@ -100,10 +121,7 @@ body {
     padding-top: 5px;
     font-size: 13px;
     padding-bottom: 0px;
-
-}
-.post > .panel-body > p {
-    margin-left: 60px;
+    width: 80%;
 }
 .post > .panel-body > .post-image {
     display: block;
@@ -118,62 +136,35 @@ body {
 .post > .panel-footer {
     font-size: 14px;
     font-weight: 700;
-    min-height: 50px;
+    min-height: 42px;
+    padding-top:0px;
+}
+.post > .panel-footer .dropdown {
+    list-style: none;
+    margin-top: 2px;
+}
+.post .panel-footer .dropdown a{
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.post .panel-footer .dropdown .dropdown-menu li {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.post .panel-footer .dropdown .dropdown-menu a{
+  color: #337ab7;
 }
 .post > .panel-footer > .btn {
     float: left;
     margin-right: 8px;
+    padding: 6px;
 }
-.post > .panel-footer > .post-icons-right {
-    float: right;
-    display: block;
-/*    margin-left: 98px;
-    color: rgb(153, 153, 153);
-    font-size: 12px;
-    font-weight: 400;
-    padding: 8px 6px 7px;
-    border: 1px solid rgb(217, 217, 217);
-    border-radius: 2px;
-    box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 0px 0px;*/
-}
-.post.post-show-comment > .panel-footer > .post-icons-right {
-    display: none;
-}
-/*.post > .post-comment {
-    display: none;
-    padding: 10px 20px 15px;
-    border-top: 1px solid rgb(229, 229, 229);
-    background-color: rgb(245, 245, 245);
-}
-.post.post-show-comment > .post-comment {
-    display: block;
-}*/
-/*.post > .post-comment > img {
-    float: left;
-}*/
-.post > .post-comment > .post-textarea {
-    float: right;
-    width: calc(100% - 56px);
-}
-.post > .post-comment > .post-textarea > textarea {
-    display: block;
-    /*margin-left: 60px;
-    width: calc(100% - 56px);*/
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(217, 217, 217);
-    box-shadow: rgba(0, 0, 0, 0.0470588) 0px 1px 0px 0px;
-    resize: vertical;
-}
-.post > .post-comment > .post-textarea > .btn {
-    margin-top: 10px;
-    margin-right: 8px;
-    width: 100%;
-}
-@media (min-width: 992px) {
-    .post > .post-comment > .post-textarea > .btn {
-        width: auto;
-    }
+.post .panel-footer #voteUp {
+  padding: 6px 12px 6px 12px;
 }
 
 
@@ -190,3 +181,26 @@ body {
     background-color: rgb(255, 255, 255);
     border-color: rgb(0, 0, 0);
 }
+
+.panel {
+  border: 0;
+}
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+}
+
+@media (min-width: 1200px) {
+.container {max-width: 940px;}
+.post .panel-footer .dropdown a { visibility: hidden;}
+}
+
