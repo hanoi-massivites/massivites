@@ -1,0 +1,52 @@
+<template name="postItem">
+  <div class="row">
+    <div class="col-xs-12">
+      <!-- post panel -->
+      <div class="panel panel-default post">
+
+        <!-- Dropdown menu of action for the posts -->
+        <div class="dropdown">
+          <span class="dropdown-toggle" type="button" data-toggle="dropdown">
+              <span class="[ glyphicon glyphicon-chevron-down ]"></span>
+          </span>
+          <ul class="dropdown-menu" role="menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Get notification</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">See more post from this user</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Edit</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Delete</a></li>
+          </ul>
+        </div>
+
+        <!-- List of post tags -->
+        <div class="post-tags">
+          <ul>
+              <li>#Millennials</li>
+              <li>#Generation</li>
+          </ul>
+        </div>
+        <div class="panel-heading">
+          <img class="[ img-circle pull-left ]" src="https://lh3.googleusercontent.com/-CxXg7_7ylq4/AAAAAAAAAAI/AAAAAAAAAQ8/LhCIKQC5Aq4/s46-c-k-no/photo.jpg" alt="Mouse0270" />
+          <h3>Robert McIntosh <small><a href="#">Follow me!</a></small></h3>
+          <h5><span>Posted on</span> - <span>Jun 27, 2014</span> </h5>
+        </div>
+        <div class="panel-body">
+          <p>Do people born in 2000 get to choose if they are Generation Y or Generation Z? How do you decide what generation you want to belong to?</p>
+        </div>
+        <div class="panel-footer">
+          <button type="button" class="btn btn-info"><span class="fa fa-arrow-up"></span></button>
+          <button type="button" class="btn btn-link disabled "><span class="fa fa-heart"><small> 30 Likes</small></span></button>
+          <button class="btn btn-link  disabled "><span class="fa fa-eye"><small> 28 Views</small></span></button>
+
+          <div class="post-icons-right">
+            <button class="btn btn-link"><span class="fa fa-share-square-o"></span></button>
+            <button class="btn btn-link"> <span class="fa fa-check-square-o"><small> Solved</small></span></button>
+            <button class="btn btn-link"><span class="fa fa-star-o"><small> Fav It!</small></span></button>
+            <button class="btn btn-link"><span class="fa fa-flag-o"></span></button>
+            <button class="btn btn-link"><span class="fa fa-comments-o"><small> 24 Comments</small></span></button>
+          </div>
+        </div>
+      </div> <!-- end panel -->
+    </div>
+  </div> <!-- end row -->
+</template>
