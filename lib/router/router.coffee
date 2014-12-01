@@ -1,4 +1,4 @@
 Router.route '/', ->
-  @render "posts",
+  @render "postsList",
   @layout "basicLayout"
 

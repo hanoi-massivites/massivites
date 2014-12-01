@@ -1,0 +1,10 @@
+<template name="postsList">
+  <div class="category-titles">
+    <h4>Trending</h4>
+    <div class="posts">
+      {{#each posts}}
+        {{> postItem}}
+      {{/each}}
+    </div>
+  </div>
+</template>
