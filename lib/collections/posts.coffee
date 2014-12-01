@@ -24,6 +24,18 @@ PostsSchema = new SimpleSchema
     optional: true
     label: "Images"
 
+  uPvotes:
+    type: Number
+    defaultValue: 0
+    Label: "Upvotes"
+    autoform:
+      omit: true
+
+  upVoters:
+    type: [String]
+    regEx: SimpleSchema.RegEx.Id
+    optional: true
+
   createdAt:
     type: Date
     denyUpdate: true
