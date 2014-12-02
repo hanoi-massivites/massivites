@@ -1,5 +1,4 @@
 TagsSchema = new SimpleSchema
-  
   name:
     type: String
     min: 3
@@ -9,3 +8,7 @@ TagsSchema = new SimpleSchema
 # making the Tags collection a global variable
 root = exports ? this
 root.Tags = new Mongo.Collection 'tags'
+
+# permissions
+Tags.allow
+  insert: -> true

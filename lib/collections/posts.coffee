@@ -24,10 +24,10 @@ PostsSchema = new SimpleSchema
     optional: true
     label: "Images"
 
-  uPvotes:
+  upVotes:
     type: Number
     defaultValue: 0
-    Label: "Upvotes"
+    label: "Upvotes"
     autoform:
       omit: true
 
@@ -49,3 +49,7 @@ PostsSchema = new SimpleSchema
 # making the Posts collection a global variable
 root = exports ? this
 root.Posts = new Mongo.Collection 'posts'
+
+# permissions
+Posts.allow
+  insert: -> true

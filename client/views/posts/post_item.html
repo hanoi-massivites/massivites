@@ -19,19 +19,20 @@
           </ul>
         </div>
 
-        <!-- List of post tags -->
+        <!-- List of post tags  -->
         <div class="post-tags">
           <ul>
-              <li>#Millennials</li>
-              <li>#Generation</li>
+            {{#each tags}}
+              <li>{{tag}}</li>
+            {{/each}}
           </ul>
         </div>
         <div class="panel-heading">
           <img class="img-circle pull-right hidden-xs" src="https://lh3.googleusercontent.com/-CxXg7_7ylq4/AAAAAAAAAAI/AAAAAAAAAQ8/LhCIKQC5Aq4/s46-c-k-no/photo.jpg" alt="Mouse0270" />
-          <a href="#"><h4><strong>Fancy Title or Jack "posted" or "asked"</strong></h4></a>
+          <a href="#"><h4><strong>{{title}}</strong></h4></a>
         </div>
         <div class="panel-body">
-          <p>Do people born in 2000 get to choose if they are Generation Y or Generation Z? How do you decide what generation you want to belong to? ...</p>
+          <p>{{description}}</p>
         </div>
         <div class="panel-footer">
           <button type="button" class="btn btn-info" id="voteUp">
