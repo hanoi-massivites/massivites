@@ -1,2 +1,3 @@
 Router.configure
-  layoutTemplate: 'basicLayout'
+  layoutTemplate: "basicLayout"
+  loadingTemplate: "Loading"

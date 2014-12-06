@@ -1,3 +1,6 @@
+# allowing a global variable as root.
+root = exports ? this
+
 TagsSchema = new SimpleSchema
   name:
     type: String
@@ -5,8 +8,6 @@ TagsSchema = new SimpleSchema
     max: 30
     label: "Name"
 
-# making the Tags collection a global variable
-root = exports ? this
 root.Tags = new Mongo.Collection 'tags'
 
 # permissions

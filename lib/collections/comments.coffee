@@ -1,3 +1,6 @@
+# allowing a global variable as root.
+root = exports ? this
+
 CommentsSchema = new SimpleSchema
   title:
     type: String
@@ -6,6 +9,4 @@ CommentsSchema = new SimpleSchema
     optional: true
     label: "Title"
 
-# making the Posts collection a global variable
-root = exports ? this
 root.Comments = new Mongo.Collection 'comments'

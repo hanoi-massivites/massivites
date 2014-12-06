@@ -1,6 +1,11 @@
 <template name="basicLayout">
-      {{> header}}
-      <div class="container">
-        {{> yield}}
-      </div>
+  <div class="container">
+    {{> header}}
+    <div class="category-titles">
+      <h4>Trending</h4>
+    </div>
+    <div class="content">
+      {{> yield}}
+    </div>
+  </div>
 </template>

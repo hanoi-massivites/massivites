@@ -1,9 +1,2 @@
-Router.route '/',
-  name: 'postPage.show'
-  template: 'postsList'
-  waitOn: -> [
-    Meteor.subscribe 'posts'
-    Meteor.subscribe 'tags'
-  ]
-
-
+Router.route '/', name: 'home'
+Router.route "post/:_id", name: "postPage"

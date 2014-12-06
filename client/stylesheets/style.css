@@ -22,18 +22,23 @@ body {
 /* --------------------------------------
    postItem
    -------------------------------------- */
-
+.post .panel {
+    margin-bottom: 14px;
+}
 .post {
     position: relative;
     border-radius: 0px;
-    border: 1px solid rgb(216, 216, 216);
+    /*border: 1px solid rgb(216, 216, 216);*/
     font-family: 'Roboto', sans-serif;
-    margin-bottom: 15px;
+/*    margin-bottom: 15px;*/
 }
 
 .post .panel-heading {
   margin-top: 0px;
   padding-bottom: 0px;
+}
+.post .panel-heading h4 {
+    width: 80%;
 }
 .post > .dropdown {
     position: absolute;
@@ -48,17 +53,18 @@ body {
     right: 0px;
     border-radius: 2px;
 }
-.post > .post-tags {
+
+/*.post > .post-tags {
     position: absolute;
     top: 84px;
     right: -3px;
-}
-.post > .post-tags > ul {
+}*/
+/*.post > .post-tags > ul {
     list-style: none;
     padding: 0px;
     margin: 0px;
-}
-.post > .post-tags > ul:hover {
+}*/
+/*.post > .post-tags > ul:hover {
     box-shadow: 0px 0px 3px rgb(0, 0, 0);
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
 }
@@ -78,7 +84,7 @@ body {
     right: 0px;
     height: 100%;
   /*border-right: 3px solid rgb(66, 127, 237);*/
-}
+/*}
 .post > .post-tags > ul:hover > li,
 .post > .post-tags > ul > li:first-child {
     padding: 5px 15px 5px 10px;
@@ -92,7 +98,7 @@ body {
 .post > .post-tags > ul > li:hover {
     background-color: rgb(66, 127, 237);
     color: rgb(255, 255, 255);
-}
+}*/
 .post > .panel-heading,
 .post > .panel-footer {
     background-color: rgb(255, 255, 255);
@@ -136,7 +142,7 @@ body {
 .post > .panel-footer {
     font-size: 14px;
     font-weight: 700;
-    min-height: 42px;
+    min-height: 46px;
     padding-top:0px;
 }
 .post > .panel-footer .dropdown {
@@ -180,10 +186,6 @@ body {
 .post .btn-default:active {
     background-color: rgb(255, 255, 255);
     border-color: rgb(0, 0, 0);
-}
-
-.panel {
-  border: 0;
 }
 
 /* --------------------------------------

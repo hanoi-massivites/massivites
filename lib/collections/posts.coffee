@@ -1,3 +1,6 @@
+# allowing a global variable as root.
+root = exports ? this
+
 PostsSchema = new SimpleSchema
   title:
     type: String
@@ -46,8 +49,7 @@ PostsSchema = new SimpleSchema
     autoform:
       omit: true
 
-# making the Posts collection a global variable
-root = exports ? this
+
 root.Posts = new Mongo.Collection 'posts'
 
 # permissions
